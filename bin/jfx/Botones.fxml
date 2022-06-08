@@ -8,9 +8,9 @@
    <center>
       <HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="60.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="color1" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="Color1" />
-            <Button fx:id="color2" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="Color2" />
-            <Button fx:id="color3" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="Color3" />
+            <Button id="color1" fx:id="color1" mnemonicParsing="false" onAction="#updateColorBlue" prefHeight="40.0" prefWidth="70.0" text="Color1" />
+            <Button id="color2" fx:id="color2" mnemonicParsing="false" onAction="#updateColorYellow" prefHeight="40.0" prefWidth="70.0" text="Color2" />
+            <Button id="color3" fx:id="color3" mnemonicParsing="false" onAction="#updateColorPurple" prefHeight="40.0" prefWidth="70.0" text="Color3" />
          </children>
       </HBox>
    </center>

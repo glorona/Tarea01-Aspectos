@@ -4,13 +4,13 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane id="bgApp" fx:id="bgApp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<BorderPane id="bgApp" fx:id="bgApp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
    <center>
       <HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="60.0" BorderPane.alignment="CENTER">
          <children>
-            <Button id="color1" fx:id="color1" mnemonicParsing="false" onAction="#updateColorBlue" prefHeight="40.0" prefWidth="70.0" text="Color1" />
-            <Button id="color2" fx:id="color2" mnemonicParsing="false" onAction="#updateColorYellow" prefHeight="40.0" prefWidth="70.0" text="Color2" />
-            <Button id="color3" fx:id="color3" mnemonicParsing="false" onAction="#updateColorPurple" prefHeight="40.0" prefWidth="70.0" text="Color3" />
+            <Button id="color1" fx:id="color1" mnemonicParsing="false" onAction="#updateColorBlue" prefHeight="40.0" prefWidth="70.0" text="Azul" />
+            <Button id="color2" fx:id="color2" mnemonicParsing="false" onAction="#updateColorYellow" prefHeight="40.0" prefWidth="70.0" text="Amarillo" />
+            <Button id="color3" fx:id="color3" mnemonicParsing="false" onAction="#updateColorPurple" prefHeight="40.0" prefWidth="70.0" text="Morado" />
          </children>
       </HBox>
    </center>

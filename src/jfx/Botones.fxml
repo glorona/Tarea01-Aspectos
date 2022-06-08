@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <center>
+      <HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="60.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="color1" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="Color1" />
+            <Button fx:id="color2" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="Color2" />
+            <Button fx:id="color3" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="Color3" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

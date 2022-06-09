@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Text;
 
 /**
  * FXML Controller class
@@ -24,6 +25,8 @@ public class MainController implements Initializable{
     private Button color3;
     @FXML
     private BorderPane bgApp;
+    @FXML
+    private Text topText;
     
     @FXML
     private void updateColorBlue() {
@@ -44,12 +47,26 @@ public class MainController implements Initializable{
     	update(color3, color3.getParent());
     }
     
+    @FXML
+    private void updateHoverBlue() {
+    	textoColor(color1,topText);
+    }
+    
+    @FXML
+    private void updateHoverYellow() {
+    	textoColor(color2,topText);
+    }
+    
+    @FXML
+    private void updateHoverPurple() {
+    	textoColor(color3,topText);
+    }
+    
     
     //
     
     @FXML
-    private void textoEscrituraAntesPresionarColor() {
-    	System.out.println("Vas a seleccionar un color!");
+    private void textoColor(Button b, Text t) {
     	
     	
     }
@@ -70,6 +87,8 @@ public class MainController implements Initializable{
     private void update(Button b, Parent p) {
     	
     }
+    
+    
  
 
 }

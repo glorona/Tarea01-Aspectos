@@ -1,4 +1,13 @@
-import com.bank.pointcut;
+
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Before;
+
+
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 
 public aspect cambiocolor {
 	
@@ -22,10 +31,25 @@ public aspect cambiocolor {
 		
 	}
 	
-	@Before("call(* update*(..))");
-   public void textoEscrituraAntesPresionarColor() {
+	//FUNCIONALIDAD EXTRA
+	
+   @After("call(* textoColor*(..))")
+   public void NotifyChangeColor(JoinPoint jp){
+	   args = jp.getArgs();
+	   Button boton = (Button) args[0];
+	   Text txt = (Text) args[1];
+		if(boton.getId().equals("color1")) {
+			txt.setText("Vas a presionar el color azul!");
+		}
+		if(boton.getId().equals("color2")) {
+			txt.setText("Vas a presionar el color amarillo!");
+		}
+		if(boton.getId().equals("color3")) {
+			txt.setText("Vas a presionar el color morado!");
+		}
+	  
+	   
     		
-    		System.out.println("**** Vas a seleccionar un color! ****");
     
     
     }

@@ -45,6 +45,19 @@ public class MainController implements Initializable{
     }
     
     
+    //
+    
+    @FXML
+    private void textoEscrituraAntesPresionarColor() {
+    	System.out.println("Vas a seleccionar un color!");
+    	
+    	
+    }
+    
+    
+    //
+    
+    
     /**
      * Initializes the controller class.
      */

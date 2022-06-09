@@ -1,8 +1,4 @@
-import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
-
-import javafx.scene.Parent;
-import javafx.scene.control.Button;
+import com.bank.pointcut;
 
 public aspect cambiocolor {
 	
@@ -26,6 +22,12 @@ public aspect cambiocolor {
 		
 	}
 	
-
+	@Before("call(* update*(..))");
+   public void textoEscrituraAntesPresionarColor() {
+    		
+    		System.out.println("**** Vas a seleccionar un color! ****");
+    
+    
+    }
 	
 }
